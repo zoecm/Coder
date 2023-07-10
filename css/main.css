@@ -1,0 +1,252 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos de header*/
+
+/*estilos de main*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+/*propiedades de los textos*/
+
+main h1{
+    margin-bottom: 1rem;
+}
+
+main p{
+    font-size: 1.3rem;
+}
+
+
+
+/*propiedades para la imagen*/
+
+main .div-img{
+    display: flex;
+    justify-content: center;
+}
+
+main .div-img img{
+    width: 80%;
+}
+
+/*estilos de section*/
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+section .card{
+    background-color: whitesmoke ;
+    margin: 1rem;
+    border-radius: 2%;
+}
+
+section .card h2{
+    margin-bottom: 1rem;
+}
+
+/*propiedades del mq*/
+
+@media screen and (min-width:1024px){
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 0.25fr);
+
+        grid-template-areas: 
+        "h1 img"
+        "p img"
+        "botones img";
+
+        align-items: center;
+    }   
+    
+    main h1{
+        grid-area: h1;
+        margin-bottom: 0.2rem;
+    }
+
+    main p{
+        grid-area: p;
+    }
+
+    main .div-img{
+        grid-area: img;
+    }
+
+    main .botones{
+        grid-area: botones;
+        margin-top: 0.2rem;
+    }
+
+    section{
+        flex-direction: row;
+    }
+    
+}
+/*footer*/
+
+footer .contenedor-footer{
+    background-color: #14364d;
+    display: flex;
+}
+
+footer .img-footer img{
+    width: 60%;
+}
+
+footer .img-footer{
+    display: flex;
+
+}
+
+footer .texto-footer{
+    color: whitesmoke;
+    text-align: center;
+    
+}
+
+/*precios*/
+
+main .contenedor-precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+main .contenedor-precio .boton-pago{
+    background-color: #67898f;
+    border-color: #67898f;
+}
+
+@media screen and (min-width:1024px) {
+
+    main .contenedor-precio{
+        display: flex;
+        flex-direction: row;
+        margin: 2rem 5rem 1rem 15rem;
+        gap: 1.5rem;
+    }
+    
+    
+}
+
+/*home*/
+
+main .img-home img{
+    width: 60%;
+}
+
+main .img-home{
+    display: flex;
+    justify-content: center;
+}
+
+main .div-home{
+    display: flex;
+    flex-direction: column;
+}
+
+/*contacto*/
+
+main .form-contacto{
+    color: rgb(0, 0, 0);
+    border-radius: 2%;
+    margin: 1rem;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    border-style: solid;
+    
+}
+
+main .formulario-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+main .formulario-contacto .botones-contacto{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+@media screen and (min-width:1024px){
+    
+    main .div-contacto{
+        display: flex;
+        justify-content: right;
+    }
+    
+    main .form-contacto{
+        display: flex;
+        justify-content: center;
+         color: black;
+         width: 40%;
+         border-radius: 2%;
+         margin: 1rem;
+         padding: 1rem;
+         border-style: solid;
+            
+        } 
+}
+
+/*nosotros*/
+
+main .div-nosotros{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+main .video-nosotros{
+    display: flex;
+    justify-content: center;    
+}
+
+main .mapa-nosotros{
+    display: flex;
+    
+}
+
+@media screen and (min-width:1024px){
+    main .div-nosotros{
+        display: grid;
+        margin: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 0.75fr);
+
+        grid-template-areas: 
+        "p video"
+        "p mapa";
+
+    }
+    .div-nosotros .texto-nosotros{
+        grid-area: p;
+    }
+
+    .div-nosotros .video-nosotros{
+        grid-area: video;
+    }
+
+    .div-nosotros .mapa-nosotros{
+        grid-area: mapa;
+    }
+
+}
