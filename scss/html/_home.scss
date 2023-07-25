@@ -16,7 +16,10 @@ main{
 }
 
 footer{
-    background-color: #14364d;
+    .contenedor-footer{
+      background-color: #14364d;
     color: white;
-    padding: 1rem;
+    padding: 1rem;  
+    }
+    
 }

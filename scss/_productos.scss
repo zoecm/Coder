@@ -1,0 +1,47 @@
+main{
+    .div-img{
+        display: flex;
+        flex-direction: center;
+        margin: 1rem;
+        img{
+           width: 80%; 
+        }
+        
+    }
+    section{
+        
+        
+        .card{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            border: solid;
+            padding: 1rem;
+            margin: 1rem;
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+    main{
+        .div-img{
+            display: flex;
+            flex-direction: center;
+            margin: 1rem;
+            img{
+               width: 50%; 
+            }
+            
+        }
+        section{
+            .card{
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            border: solid;
+            padding: 1rem;
+            margin: 1rem;
+            }
+        }
+    }
+}

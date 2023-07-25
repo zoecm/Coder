@@ -1,0 +1,23 @@
+main{
+    .div-contacto{
+        border: solid;
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        .form-contacto{
+            .formulario-contacto{
+                .botones-contacto{
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:1024px){
+    main{
+        .div-contacto{
+            display: flex;
+            
+        }
+    }
+}
